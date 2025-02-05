@@ -49,8 +49,6 @@ p {
 /* utils */
 .container {
   max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 2rem;
 }
 .btn {
   display: inline-block;
@@ -105,4 +103,46 @@ p {
 .card {
   background-color: var(--bg-color2);
   padding: 1rem;
+}
+
+/* navbar */
+#main-nav {
+  background-color: #fff;
+  position: static;
+  top: 0;
+  z-index: 3;
+}
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+#main-nav .logo {
+  width: 70px;
+}
+#main-nav ul {
+  display: flex;
+  justify-self: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#main-nav ul li a {
+  padding: 0.6rem;
+}
+#main-nav .social-icons {
+  justify-self: end;
+}
+#main-nav ul li .active {
+  background-color: var(--dark-color);
+  color: #fff;
+  border-radius: 9px;
+}
+#main-nav ul li a:hover {
+  background-color: var(--light-color);
+  color: black;
+  display: inline-block;
+  transition: 0.3s;
+  transform: scale(1.1);
+  border-radius: 9px;
 }
