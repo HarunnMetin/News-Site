@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #daf5ff;
+  --secondary-color: #086972;
+  --light-color: #f6f1f1;
+  --dark-color: #071952;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: var(--primary-color);
+}
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 0.7rem;
+  line-height: 1.3;
+}
