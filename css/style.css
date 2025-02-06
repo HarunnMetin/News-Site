@@ -51,6 +51,7 @@ p {
   max-width: var(--max-width);
 }
 .btn {
+  position: absolute;
   display: inline-block;
   border: none;
   background-color: var(--secondary-color);
@@ -85,9 +86,15 @@ p {
   background-color: var(--bg-color);
   color: var(--secondary-color);
 }
-.bg-color {
+.bg-color2 {
   background-color: var(--bg-color2);
   color: var(--dark-color);
+}
+.bg-color3 {
+  background-color: var(--primary-color);
+}
+.bg-color4 {
+  background-color: #e5d9f2;
 }
 .p-1 {
   padding: 0.5px;
@@ -104,6 +111,16 @@ p {
 .card {
   background-color: var(--bg-color2);
   padding: 1rem;
+}
+
+.category {
+  display: inline-block;
+  color: #ff0000;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
 }
 
 /* navbar */
@@ -176,4 +193,14 @@ p {
   align-items: center;
   gap: 20px;
   padding: 0 2rem;
+  position: relative;
+}
+#header .header-content {
+  z-index: 2;
+}
+#header .header-content {
+  color: #fff;
+}
+#header .header-content p {
+  margin-bottom: 1.2rem;
 }
